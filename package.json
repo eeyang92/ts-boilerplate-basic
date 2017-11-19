@@ -1,0 +1,14 @@
+{
+  "name": "ts-boilerplate-basic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Eric Yang",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.6.1"
+  },
+  "scripts": {
+    "build": "./node_modules/typescript/bin/tsc",
+    "start": "node ./dist/index.js"
+  }
+}
