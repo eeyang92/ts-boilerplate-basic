@@ -5,10 +5,27 @@
   "author": "Eric Yang",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "@types/node": "^8.0.53",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.2.3",
     "typescript": "^2.6.1"
   },
   "scripts": {
     "build": "./node_modules/typescript/bin/tsc",
-    "start": "node ./dist/index.js"
+    "start": "node ./dist/index.js",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
   }
 }
